@@ -1,23 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
-</head>
-<body>
-    <h1>Welcome to My Homepage</h1>
-    <p>This is the main page of my website.</p>
+	<head>
+		<meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behaviour on mobile devices -->
+		<link href="style.css" rel="stylesheet"> <!-- Links to the external stylesheet -->
+		<script src="../javascript/javascript.js"></script> <!-- Links to the external JavaScript file -->
+		<title>Slovak Community Charity</title> <!-- Sets the title of the webpage -->
+	</head>
+	
+	<div id="dateTime"></div> <!-- Placeholder for displaying date and time -->
 
-    <nav>
-    <ul>
-        <li><a href="homepage.html">Homepage</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="datesandfees.html">Contact</a></li>
-         <li><a href="games.html">Educational Games</a></li>
-         <li><a href="registration.html">Registration</a></li>
-        <li><a href="history.html">History</a></li>
-    </ul>
-  </nav>
-</body>
+    <script>
+        function updateDateTime() {
+            const now = new Date(); // Gets the current date and time
+            const dateTimeString = now.toLocaleString(); // Converts date and time to a string
+            document.getElementById('dateTime').textContent = dateTimeString; // Updates the content of the dateTime element
+        }
+
+        setInterval(updateDateTime, 1000); // Calls updateDateTime every second
+        updateDateTime(); // Initial call to display the date and time immediately
+		
+		window.alert("Welcome to the Slovak Community Charity Website. Thank you for visiting!");
+    </script>
+	
+	<img src="../assets/svclogo.png" alt="Logo" class="logo"> <!-- Displays the logo image -->
+	
+	<body>
+      <h1>Slovak Community Charity</h1> <!-- Main heading of the webpage -->
+	  
+	  <!-- Navigation Bar -->
+	  <div class="topnav">
+	  <a href="index.html">Home</a> <!-- Link to the homepage -->
+	  <a href="aboutus.html">About Us</a> <!-- Link to the About Us page -->
+	  <a href="datesandfees.html">Dates and Fees</a> <!-- Link to the Dates and Fees page -->
+	  <a href="games.html">Educational Games</a> <!-- Link to the Educational Games page -->
+	  <a href="registration.html">Registration</a> <!-- Link to the Registration page -->
+	  <a href="history.html">History</a> <!-- Link to the History page -->
+	  </div>
+	  
+	  <div class="box-section">
+        <h2><b><u>Welcome to Slovak Community Charity</u></b></h2> <!-- Subheading with bold and underline -->
+        <p>We are a dedicated charity focused on supporting the Slovak community in Greater Manchester. Our aim is to provide educational resources, cultural activities, and community support to help Slovak-speaking families maintain their heritage while living abroad.</p> <!-- Paragraph describing the charity -->
+    </div>
+    
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/osCUTGkKVRg?si=hifaZP7weAXGedtv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- Embedded YouTube video -->
+	
+    <div class="box-section">
+        <h2><b><u>Our Vision</u></b></h2> <!-- Subheading with bold and underline -->
+        <p>Our vision is to create a vibrant community where Slovak culture and language thrive. We believe in fostering a sense of belonging and identity through education, cultural events, and community engagement.</p> <!-- Paragraph describing the vision -->
+    </div>
+    
+    <div class="box-section">
+        <h2><b><u>Programs and Services</u></b></h2> <!-- Subheading with bold and underline -->
+        <p>We offer a variety of programs and services to support our community:</p> <!-- Paragraph introducing the programs and services -->
+        <ul>
+            <li><b>Language Classes</b> : Learn Slovak in a supportive and interactive environment.</li> <!-- List item for Language Classes -->
+            <li><b>Cultural Events</b> : Celebrate Slovak traditions with music, dance, and food.</li> <!-- List item for Cultural Events -->
+            <li><b>Community Support</b> : Connect with other Slovak-speaking families and individuals.</li> <!-- List item for Community Support -->
+            <li><b>Educational Workshops</b> : Enhance your skills and knowledge through our workshops.</li> <!-- List item for Educational Workshops -->
+        </ul>
+    </div>
+    
+    <div class="box-section">
+        <h2><b><u>Get Involved</u></b></h2> <!-- Subheading with bold and underline -->
+        <p>There are many ways to get involved with our charity:</p> <!-- Paragraph introducing ways to get involved -->
+        <ul>
+            <li><b>Volunteer</b> : Help us with events and activities.</li> <!-- List item for Volunteering -->
+            <li><b>Donate</b> : Support our programs and services.</li> <!-- List item for Donations -->
+            <li><b>Join</b> : Become a member and participate in our activities.</li> <!-- List item for Joining -->
+			<li><b>Spread the Word</b> : Share our mission with your friends and family.</li> <!-- List item for Spreading the Word -->
+        </ul>
+    </div>
+    
+    <div class="box-section">
+        <h2><b><u>Contact Us</u></b></h2> <!-- Subheading with bold and underline -->
+        <p>If you have any questions or would like to learn more about our charity, please feel free to contact us:</p> <!-- Paragraph introducing contact information -->
+        <p>Email: svcmanchester@yahoo.com.</p> <!-- Email contact information -->
+        <p>Phone: +44 1234 567890</p> <!-- Phone contact information -->
+        <p>Address: 123 Charity Lane, Greater Manchester, UK</p> <!-- Address contact information -->
+    </div>
+	
+	<footer>
+        <p>&copy; 2025 Slovak Community Charity. All rights reserved.</p> <!-- Footer text -->
+       <button onclick="location.href='../pages/supportus.html'" class="small-button">Support Us</button> <!-- Button linking to Support Us page -->
+    </footer>
+	 
+	</body> 
 </html>
