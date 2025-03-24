@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behaviour on mobile devices -->
+		<link href="../css/stylesheet.css" rel="stylesheet"> <!-- Links to the external stylesheet -->
+		<script src="../javascript/javascript.js"></script> <!-- Links to the external JavaScript file -->
+		<title>Slovak Community Charity</title> <!-- Sets the title of the webpage -->
+	</head>
+	
+	<div id="dateTime"></div> <!-- Placeholder for displaying date and time -->
 
+    <script>
+        function updateDateTime() {
+            const now = new Date(); // Gets the current date and time
+            const dateTimeString = now.toLocaleString(); // Converts date and time to a string
+            document.getElementById('dateTime').textContent = dateTimeString; // Updates the content of the dateTime element
+        }
+
+        setInterval(updateDateTime, 1000); // Calls updateDateTime every second
+        updateDateTime(); // Initial call to display the date and time immediately
+    </script>
+
+	<img src="../assets/svclogo.png" alt="Logo" class="logo"> <!-- Displays the logo image -->
+	
+	<body>
+      <h1>Slovak Community Charity</h1> <!-- Main heading of the webpage -->
+	  
+	  <!-- Navigation Bar -->
+	  <div class="topnav">
+	  <a href="../pages/homepage.html">Home</a> <!-- Link to the homepage -->
+	  <a href="../pages/aboutus.html">About Us</a> <!-- Link to the About Us page -->
+	  <a href="../pages/datesandfees.html">Dates and Fees</a> <!-- Link to the Dates and Fees page -->
+	  <a href="../pages/games.html">Educational Games</a> <!-- Link to the Educational Games page -->
+	  <a href="../pages/registration.html">Registration</a> <!-- Link to the Registration page -->
+	  <a href="../pages/history.html">History</a> <!-- Link to the History page -->
+	  </div>
+	  
+	  <div class="box-section">
+        <h2><b><u>Support Us</u></b></h2> <!-- Subheading for support us section -->
+		
+		<p>At Slovenské Vzdelávacie Centrum – South Manchester, we are passionate about preserving the Slovak language and culture for future generations. As a registered charity, we rely on the generosity of our community to continue providing high-quality education, cultural programs, and support services.</p> <!-- Paragraph describing the importance of support -->
+		
+		<li>There are two key ways you can help:</li> <!-- List item introducing ways to help -->
+	  </div>
+		
+	  <div class="box-section">
+		<h2><b><u>Make a Donation</u></b></h2> <!-- Subheading for make a donation section -->
+        <li>Your contribution helps us:</li> <!-- List item introducing donation benefits -->
+		
+		<li> &#8226;  Provide affordable Slovak language classes for children and adults.</li> <!-- List item for providing language classes -->
+        <li> &#8226;  Organise cultural events, workshops, and community activities.</li> <!-- List item for organizing cultural events -->
+		<li> &#8226;  Develop educational resources for our students.</li> <!-- List item for developing educational resources -->
+		<li> &#8226;  Offer support and guidance for Slovak families in the UK.</li> <!-- List item for offering support and guidance -->
+		
+		<p>Every donation, no matter the amount, makes a real difference in ensuring that Slovak heritage thrives abroad.</p> <!-- Paragraph emphasizing the impact of donations -->
+	  </div>
+		
+	  <div class="box-section">
+		<h2><b><u>How to Donate</u></b></h2> <!-- Subheading for how to donate section -->
+		
+		<li>You can support us directly via bank transfer:</li> <!-- List item introducing bank transfer -->
+		<li>Account Number: 19215268</li> <!-- List item for account number -->
+		<li>Sort Code: 30-54-66</li> <!-- List item for sort code -->
+		
+		<p>If you would like to discuss other ways to donate or contribute, please contact us.</p> <!-- Paragraph inviting contact for other donation methods -->
+	  </div>
+		
+	<footer>
+		<p>&copy; 2025 Simple Layout. All rights reserved.</p> <!-- Footer text -->
+	</footer>	
+</body> 
+</html>
