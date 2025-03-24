@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behaviour on mobile devices -->
+		<link href="../css/stylesheet.css" rel="stylesheet"> <!-- Links to the external stylesheet -->
+		<script src="../javascript/javascript.js"></script> <!-- Links to the external JavaScript file -->
+		<title>Slovak Community Charity</title> <!-- Sets the title of the webpage -->
+	</head>
+	
+	<div id="dateTime"></div> <!-- Placeholder for displaying date and time -->
 
+    <script>
+        function updateDateTime() {
+            const now = new Date(); // Gets the current date and time
+            const dateTimeString = now.toLocaleString(); // Converts date and time to a string
+            document.getElementById('dateTime').textContent = dateTimeString; // Updates the content of the dateTime element
+        }
+
+        setInterval(updateDateTime, 1000); // Calls updateDateTime every second
+        updateDateTime(); // Initial call to display the date and time immediately
+    </script>
+
+	<img src="../assets/svclogo.png" alt="Logo" class="logo"> <!-- Displays the logo image -->
+	
+	<body>
+      <h1>Slovak Community Charity</h1> <!-- Main heading of the webpage -->
+	  
+	  <!-- Navigation Bar -->
+	  <div class="topnav">
+	  <a href="../pages/homepage.html">Home</a> <!-- Link to the homepage -->
+	  <a href="../pages/aboutus.html">About Us</a> <!-- Link to the About Us page -->
+	  <a href="../pages/datesandfees.html">Dates and Fees</a> <!-- Link to the Dates and Fees page -->
+	  <a href="../pages/games.html">Educational Games</a> <!-- Link to the Educational Games page -->
+	  <a href="../pages/registration.html">Registration</a> <!-- Link to the Registration page -->
+	  <a href="../pages/history.html">History</a> <!-- Link to the History page -->
+	  </div>
+	  
+	  <br>
+	  <br>
+	  
+	<div class="box-section"> 
+	<h2><b><u>Registration Confirmation</u></b></h2> <!-- Subheading for registration confirmation -->
+    <p>Thank you for registering! Your details have been successfully submitted.</p> <!-- Paragraph confirming successful registration -->
+    <p>We will contact you soon with further information.</p> <!-- Paragraph indicating further contact -->
+	</div>
+	
+	<br>
+	<br>
+	
+	<footer>
+    <p>&copy; 2025 Slovak Community Charity. All rights reserved.</p> <!-- Footer text -->
+    <button onclick="location.href='../pages/supportus.html'" class="small-button">Support Us</button> <!-- Button linking to Support Us page -->
+</footer>
+</body>
+</html>
