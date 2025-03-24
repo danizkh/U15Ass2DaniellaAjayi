@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behaviour on mobile devices -->
+		<link href="../css/stylesheet.css" rel="stylesheet"> <!-- Links to the external stylesheet -->
+		<script src="../javascript/javascript.js"></script> <!-- Links to the external JavaScript file -->
+		<title>Slovak Community Charity</title> <!-- Sets the title of the webpage -->
+	</head>
+	
+	<div id="dateTime"></div> <!-- Placeholder for displaying date and time -->
 
+    <script>
+        function updateDateTime() {
+            const now = new Date(); // Gets the current date and time
+            const dateTimeString = now.toLocaleString(); // Converts date and time to a string
+            document.getElementById('dateTime').textContent = dateTimeString; // Updates the content of the dateTime element
+        }
+
+        setInterval(updateDateTime, 1000); // Calls updateDateTime every second
+        updateDateTime(); // Initial call to display the date and time immediately
+    </script>
+
+	<img src="../assets/svclogo.png" alt="Logo" class="logo"> <!-- Displays the logo image -->
+	
+	<body>
+      <h1>Slovak Community Charity</h1> <!-- Main heading of the webpage -->
+	  
+	  <!-- Navigation Bar -->
+	  <div class="topnav">
+	  <a href="../pages/homepage.html">Home</a> <!-- Link to the homepage -->
+	  <a href="../pages/aboutus.html">About Us</a> <!-- Link to the About Us page -->
+	  <a href="../pages/datesandfees.html">Dates and Fees</a> <!-- Link to the Dates and Fees page -->
+	  <a href="../pages/games.html">Educational Games</a> <!-- Link to the Educational Games page -->
+	  <a href="../pages/registration.html">Registration</a> <!-- Link to the Registration page -->
+	  <a href="../pages/history.html">History</a> <!-- Link to the History page -->
+	  </div>
+	  
+	  <h2>Registration Form</h2> <!-- Subheading for the registration form -->
+	  
+	  <form action="C:\Users\1479819\OneDrive - The Manchester College\L3 YEAR 1 Computer Science and Digital Development\UNIT 15\Assignments\Assignment 3\slovak\pages\response.html" method="post"> <!-- Form action and method -->
+        
+        <label for="student-name">Student Name:</label> <!-- Label for student name -->
+        <input type="text" id="student-name" name="student-name" required> <!-- Input field for student name -->
+        
+        <label for="student-age">Student Age:</label> <!-- Label for student age -->
+        <input type="number" id="student-age" name="student-age" required> <!-- Input field for student age -->
+		
+		<label for="student-name">Email Address:</label> <!-- Label for student name -->
+        <input type="text" id="email-address" name="email-address" required> <!-- Input field for student name -->
+        
+        <label for="language-background">Language Background:</label> <!-- Label for language background -->
+        <input type="text" id="language-background" name="language-background" required> <!-- Input field for language background -->
+        
+        <label for="parent-contact">Parent/Guardian Contact Information:</label> <!-- Label for parent/guardian contact information -->
+        <input type="text" id="parent-contact" name="parent-contact" required> <!-- Input field for parent/guardian contact information -->
+        
+        <label for="emergency-contact">Emergency Contact Details:</label> <!-- Label for emergency contact details -->
+        <input type="text" id="emergency-contact" name="emergency-contact" required> <!-- Input field for emergency contact details -->
+        
+        <label for="medical-sen">Medical or Special Educational Needs (SEN) Information:</label> <!-- Label for medical or SEN information -->
+        <textarea id="medical-sen" name="medical-sen" rows="4" required></textarea> <!-- Textarea for medical or SEN information -->
+        
+        <label for="preferred-session">Preferred Session:</label> <!-- Label for preferred session -->
+        <select id="preferred-session" name="preferred-session" required> <!-- Dropdown for preferred session -->
+            <option value="am">AM</option> <!-- Option for AM session -->
+            <option value="pm">PM</option> <!-- Option for PM session -->
+        </select>
+        
+        <label for="consent">Consent for Photos, Videos, and Data Handling:</label> <!-- Label for consent -->
+        <input type="checkbox" id="consent" name="consent" required> <!-- Checkbox for consent -->
+        <label for="consent">I give my consent</label> <!-- Label for consent checkbox -->
+        
+        <button type="submit">Submit</button> <!-- Submit button -->
+	  </form>
+	  
+	  <footer>
+        <p>&copy; 2025 Slovak Community Charity. All rights reserved.</p> <!-- Footer text -->
+        <button onclick="location.href='../pages/supportus.html'" class="small-button">Support Us</button> <!-- Button linking to Support Us page -->
+     </footer>
+	
+	</body>
+</html>
