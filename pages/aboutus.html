@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behaviour on mobile devices -->
+		<link href="../css/stylesheet.css" rel="stylesheet"> <!-- Links to the external stylesheet -->
+		<script src="../javascript/javascript.js"></script> <!-- Links to the external JavaScript file -->
+		<title>Slovak Community Charity</title> <!-- Sets the title of the webpage -->
+	</head>
+	
+	<div id="dateTime"></div> <!-- Placeholder for displaying date and time -->
 
+    <script>
+        function updateDateTime() {
+            const now = new Date(); // Gets the current date and time
+            const dateTimeString = now.toLocaleString(); // Converts date and time to a string
+            document.getElementById('dateTime').textContent = dateTimeString; // Updates the content of the dateTime element
+        }
+
+        setInterval(updateDateTime, 1000); // Calls updateDateTime every second
+        updateDateTime(); // Initial call to display the date and time immediately
+    </script>
+	
+	<body class="background-page"> <!-- Applies background-page class to the body -->
+		 
+		<img src="../assets/svclogo.png" alt="Logo" class="logo"> <!-- Displays the logo image -->
+	<body>
+      <h1>Slovak Community Charity</h1> <!-- Main heading of the webpage -->
+	  
+	  <!-- Navigation Bar -->
+	  <div class="topnav">
+	  <a href="../pages/homepage.html">Home</a> <!-- Link to the homepage -->
+	  <a href="../pages/aboutus.html">About Us</a> <!-- Link to the About Us page -->
+	  <a href="../pages/datesandfees.html">Dates and Fees</a> <!-- Link to the Dates and Fees page -->
+	  <a href="../pages/games.html">Educational Games</a> <!-- Link to the Educational Games page -->
+	  <a href="../pages/registration.html">Registration</a> <!-- Link to the Registration page -->
+	  <a href="../pages/history.html">History</a> <!-- Link to the History page -->
+	  </div>
+	  
+	  <div class="box-section1">
+	  <h2><b><u>Who we Are</u></b></h2> <!-- Subheading with bold and underline -->
+	  
+      <p>Slovenské Vzdelávacie Centrum – South Manchester is a <b>registered charity</b> dedicated to <b>preserving and promoting Slovak language and culture.</b> We provide <b>Slovak language education</b> and organize <b>cultural and community activities</b> to help Slovak-speaking families maintain their heritage while living abroad.</p> <!-- Paragraph describing the charity -->
+	  
+	  <p>While our primary focus is on supporting <b>Slovak-speaking children and families,</b> we warmly welcome anyone interested in learning the Slovak language and engaging with our traditions. Beyond our Saturday school, we offer <b>various workshops, events, and social activities</b> where individuals of all ages can <b>connect, learn, and take part in our cultural community.</b></p> <!-- Paragraph describing the inclusivity of the charity -->
+      </div>
+	  
+	  <div class="box-section1">
+	  <h2><b><u>Our Mission</u></b></h2> <!-- Subheading with bold and underline -->
+	  
+	  <p>Our mission is to: At <b>Slovenské Vzdelávacie Centrum – South Manchester,</b> our mission goes beyond just teaching the Slovak language. We are here to <b>keep our heritage alive,</b> to ensure that children growing up abroad don’t lose their <b>connection to their roots,</b> and to create a <b>place where Slovak culture thrives—</b>even far from home.</p> <!-- Paragraph describing the mission -->
+	  
+	  <p>We believe that language is more than just words; it carries <b>identity, history, and a sense of belonging</b>. Through our work, we bring Slovak-speaking families together, helping them <b>build friendships, strengthen their cultural ties, and feel at home even while living in the UK.</b></p> <!-- Paragraph describing the importance of language -->
+	  
+	  <p>Education is at the heart of what we do, but our purpose extends even further. We are here to <b>bridge the gap between the UK and Slovak education systems</b>, ensuring that children who may one day return to Slovakia can transition smoothly. We are here to <b>support families, guide them, and make sure no one feels lost when navigating life between two countries</b>.</p> <!-- Paragraph describing the educational support -->
+	  
+	  <p>Above all, we are here to create a <b>community—</b>one that welcomes, supports, and celebrates <b>Slovak language, traditions, and the people who cherish them</b>.</p> <!-- Paragraph describing the community aspect -->
+	  </div>
+	  
+	  <div class="box-section1">
+	  <h2><b><u>Our Journey</u></b></h2> <!-- Subheading with bold and underline -->
+	  
+	  <p>Slovenské Vzdelávacie Centrum – South Manchester was founded by a group of <b>dedicated teachers</b> who shared a <b>common vision</b>—to establish a <b>Slovak educational and cultural centre</b> that truly makes a difference.</p> <!-- Paragraph describing the founding -->
+	  
+	  <p>With a passion for <b>teaching, culture, and community-building,</b> we worked tirelessly to create a space where Slovak families could access <b>quality education and cultural activities.</b></p> <!-- Paragraph describing the efforts -->
+	  
+	  <p>After months of hard work, we were proud to become a <b>registered charity on 9th September 2024,</b> marking a significant step in our journey. Our <b>official launch on 15th September</b> was a proud moment, celebrated in collaboration with the <b>Faculty of Education from Univerzita Mateja Bela and the Association of Slovak Schools and Community Centres in the UK.</b></p> <!-- Paragraph describing the registration and launch -->
+	  
+	  <p>Since then, we have continued to grow, supporting <b>Slovak-speaking families, students, and individuals</b> who wish to <b>learn, connect, and celebrate Slovak culture</b> together.</p> <!-- Paragraph describing the growth -->
+	  </div>
+
+	  
+	  <footer>
+        <p>&copy; 2025 Slovak Community Charity. All rights reserved.</p> <!-- Footer text -->
+        <button onclick="location.href='../pages/supportus.html'" class="small-button">Support Us</button> <!-- Button linking to Support Us page -->
+     </footer>
+	 
+  </body>
+</html>
