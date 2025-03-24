@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behaviour on mobile devices -->
+		<link href="../css/stylesheet.css" rel="stylesheet"> <!-- Links to the external stylesheet -->
+		<script src="../javascript/javascript.js"></script> <!-- Links to the external JavaScript file -->
+		<title>Slovak Community Charity</title> <!-- Sets the title of the webpage -->
+	</head>
+	
+	<div id="dateTime"></div> <!-- Placeholder for displaying date and time -->
 
+    <script>
+        function updateDateTime() {
+            const now = new Date(); // Gets the current date and time
+            const dateTimeString = now.toLocaleString(); // Converts date and time to a string
+            document.getElementById('dateTime').textContent = dateTimeString; // Updates the content of the dateTime element
+        }
+
+        setInterval(updateDateTime, 1000); // Calls updateDateTime every second
+        updateDateTime(); // Initial call to display the date and time immediately	
+    </script>
+
+	<img src="../assets/svclogo.png" alt="Logo" class="logo"> <!-- Displays the logo image -->
+	
+	<body>
+      <h1>Slovak Community Charity</h1> <!-- Main heading of the webpage -->
+	  
+	  <!-- Navigation Bar -->
+	  <div class="topnav">
+	  <a href="../pages/homepage.html">Home</a> <!-- Link to the homepage -->
+	  <a href="../pages/aboutus.html">About Us</a> <!-- Link to the About Us page -->
+	  <a href="../pages/datesandfees.html">Dates and Fees</a> <!-- Link to the Dates and Fees page -->
+	  <a href="../pages/games.html">Educational Games</a> <!-- Link to the Educational Games page -->
+	  <a href="../pages/registration.html">Registration</a> <!-- Link to the Registration page -->
+	  <a href="../pages/history.html">History</a> <!-- Link to the History page -->
+	  </div>
+	  
+	  <div class="box-section">
+	  <h2><b><u>Dates and Fees</u></b></h2> <!-- Subheading with bold and underline -->
+	  
+	  <p>At Slovenské Vzdelávacie Centrum – South Manchester, we divide our academic year into <b>four terms: Autumn, Winter, Spring, and Summer.</b> This structure allows us to build learning themes and activities around seasonal and cultural events, while also ensuring alignment with <b>South Manchester (Trafford Council) school holidays.</b></p> <!-- Paragraph describing the term structure -->
+	  
+	  <p>We offer <b>Saturday Slovak Language lessons</b> at two locations:</p> <!-- Paragraph introducing the lesson locations -->
+	 
+        <li><b> &#8226; Morning (AM) Sessions: </b>  10:00 – 12:00 at The Firs Primary School.</li> <!-- List item for morning sessions -->
+        <li><b> &#8226; Afternoon (PM) Sessions: </b>  14:00 – 16:00 at Sale High School.</li> <!-- List item for afternoon sessions -->
+	  </div>
+		
+	  <div class="box-section">
+		<p>Although we primarily serve <b>South Manchester,</b> we <b>welcome students from all areas.</b></p> <!-- Paragraph welcoming students from all areas -->
+		<p><b> 2024/2025 Term Dates</b></p> <!-- Subheading for term dates -->
+		
+		<table>
+        <thead>
+            <tr>
+                <th>Term</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Weeks</th>
+                <th>Holidays</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Autumn</td>
+                <td>2nd November 2024</td>
+                <td>14th December 2024</td>
+                <td>7 weeks</td>
+                <td><b>Christmas holiday</b> after term ends</td>
+            </tr>
+            <tr>
+                <td>Winter</td>
+                <td>11th January 2025</td>
+                <td>8th February 2025</td>
+                <td>5 weeks</td>
+                <td><b>February holiday</b> after term ends</td>
+            </tr>
+            <tr>
+                <td>Spring</td>
+                <td>1st March 2025</td>
+                <td>17th May 2025</td>
+                <td>10 weeks</td>
+                <td><b>Easter holiday</b> (no classes 12th & 19th April)<br><b>May holiday</b> after term ends</td>
+            </tr>
+            <tr>
+                <td>Summer</td>
+                <td>7th June 2025</td>
+                <td>12th July 2025</td>
+                <td>6 weeks</td>
+                <td><b>Summer holiday</b> after term ends</td>
+            </tr>
+        </tbody>
+    </table> <!-- Table displaying term dates and details -->
+	
+		<p><b>Note: </b> Term dates align with <b> Trafford Council School Holidays</b> where possible, though some variations may apply.</p> <!-- Note about term dates alignment -->
+	  </div>
+		
+	  <div class="box-section">
+		<h2><b><u>Fees and Payment Options</u></b></h2> <!-- Subheading for fees and payment options -->
+		
+		<p>We offer <b>two flexible payment options: Term Fees</b> for committed learners and a <b>Pay-As-You-Go</b> option for families who prefer flexibility.</p> <!-- Paragraph introducing payment options -->
+		
+		<h2><b><u>Term Fees</u></b></h2> <!-- Subheading for term fees -->
+		<li><b> &#8226;  Autumn Term (7 weeks) </b>:   £84.</li> <!-- List item for Autumn Term fee -->
+        <li><b> &#8226;  Winter Term (5 weeks) </b>:   £60.</li> <!-- List item for Winter Term fee -->
+		<li><b> &#8226;  Spring Term (10 weeks) </b>:  £120.</li> <!-- List item for Spring Term fee -->
+		<li><b> &#8226;  Summer Term (6 weeks) </b>:   £72.</li> <!-- List item for Summer Term fee -->
+		
+		<p><b>Sibling Discount </b>: Each additional sibling receives a <b> 25% discount.</b></p> <!-- Paragraph about sibling discount -->
+	  </div>
+		
+		<div class="box-section">
+	<h2><b><u>Pay-As-You-Go Option</u></b></h2> <!-- Subheading for Pay-As-You-Go option -->
+	
+	<p>For families who prefer flexibility, we offer a <b> Pay-As-You-Go </b> option:</p> <!-- Paragraph introducing Pay-As-You-Go option -->
+	
+	<li><b> &#8226;Price per session </b>: £13 per Saturday.</li> <!-- List item for session price -->
+    <li><b> &#8226;Sibling Discount </b>: Each additional sibling receives a 25% discount on their session fee.</li> <!-- List item for sibling discount -->
+	
+	<br>
+	<br>
+	<li><b>Example of Fees for Siblings</b>:</li> <!-- Subheading for example fees -->
+	<br>
+	
+	<li>First Child: £13</li> <!-- List item for first child fee -->
+	<li>Second Child (25% Discount): £9.75</li> <!-- List item for second child fee -->
+	<li><b>Total for Two Siblings</b>: £22.75</li> <!-- List item for total fee for two siblings -->
+	<li>Third Child (25% Discount) : £9.75</li> <!-- List item for third child fee -->
+	<li><b>Total for Three Siblings</b>: £32.50</li> <!-- List item for total fee for three siblings -->
+</div>
+		
+<div class="box-section">
+	<li><b><u>Monthly Membership <i>(Coming Soon!)</i></u></b></li> <!-- Subheading for monthly membership -->
+	
+	We are currently developing a <b>monthly membership plan</b> to provide additional flexibility and benefits. More details will be available soon. <!-- Paragraph introducing monthly membership plan -->
+</div>
+
+<footer>
+    <p>&copy; 2025 Slovak Community Charity. All rights reserved.</p> <!-- Footer text -->
+    <button onclick="location.href='../pages/supportus.html'" class="small-button">Support Us</button> <!-- Button linking to Support Us page -->
+</footer>
+
+</body> 
+</html>
