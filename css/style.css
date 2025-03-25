@@ -27,7 +27,7 @@ title {
   text-align: center; /* Centers text within links */
   padding: 14px 16px; /* Adds padding to links */
   text-decoration: none; /* Removes underline from links */
-  font-size; 17px; /* Sets font size to 17px */
+  font-size: 17px; /* Sets font size to 17px */
 }
 
 /* Change the color of links on hover */
