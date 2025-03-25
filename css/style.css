@@ -6,7 +6,7 @@ body {
 
 body {
 	text-align: center; /* Centers text */
-	font-size: 24px; /* Sets font size to 20px */
+	font-size: 20px; /* Sets font size to 20px */
 }	
 
 title {
@@ -68,7 +68,7 @@ h2 {
 
 .box-section {
 	font-family: 'montserrat'; /* Sets font family to Montserrat */
-	font-size: 18px; /* Sets font size to 18px */
+	font-size: 20px; /* Sets font size to 18px */
 	line-height: 1.5; /* Sets line height */
 	width: 930px; /* Sets width */
 	display: none; /* Initially hides the section */
@@ -80,7 +80,7 @@ h2 {
 .box-section1 {
 	color: white; /* Sets text color to white */
 	font-family: 'montserrat'; /* Sets font family to Montserrat */
-	font-size: 18px; /* Sets font size to 18px */
+	font-size: 20px; /* Sets font size to 18px */
 	line-height: 1.5; /* Sets line height */
 	width: 800px; /* Sets width */
 	display: none; /* Initially hides the section */
